@@ -1,0 +1,166 @@
+<!--
+
+Layout Play - Empowered Health Advocacy, LLC Website
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Empowered Health Advocacy, LLC.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<header>
+    <nav>
+        <ul>
+            <li class="nav-img"><a href="index.html"><img src="images/reallogo.png" alt="Company Logo"></a></li>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li id="services-nav"><a href="services.html">Services</a>
+                    <ul>
+                        <li><a href="advocacy.html">Advocacy</a></li>
+                        <li><a href="doula.html">Doula</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </ul>
+    </nav>
+</header>
+
+
+<body id="contact">
+    <h1>Connect With Us</h1>
+    <section>
+        <article id="contact-images">
+            <img src="images/contact-phone.png" alt="hand holding smartphone showing facebook app icon and a coffee cup on white surface" width="450" usemap="#fb-map">
+            <map name="fb-map">
+            <area shape="rect" coords="120, 170, 180, 235" href="https://www.facebook.com/empoweredhealthadvocacy/?ref=page_internal" alt="clickable facebook icon">
+            </map>
+            <br>
+            <img src="images/contact-computer.png" alt="laptop encouraging email messaging" width="450" usemap="#em-map" id="em-img">
+            <map name="em-map">
+            <area shape="rect" coords="165, 100, 270, 180" href="mailto:empowered@empoweredhealthadvocacy.com" alt="clickable email icon">
+            </map>
+        </article>
+        <article id="contact-images2">
+            <img src="images/contact-phone.png" alt="hand holding smartphone showing facebook app icon and a coffee cup on white surface" width="300" usemap="#fb-map2">
+            <map name="fb-map2">
+            <area shape="rect" coords="80, 110, 120, 155" href="https://www.facebook.com/empoweredhealthadvocacy/?ref=page_internal" alt="clickable facebook icon">
+            </map>
+            <br>
+            <img src="images/contact-computer.png" alt="laptop encouraging email messaging" width="300" usemap="#em-map2" id="em-img2">
+            <map name="em-map2">
+            <area shape="rect" coords="110, 65, 180, 120" href="mailto:empowered@empoweredhealthadvocacy.com" alt="clickable email icon">
+            </map>
+        </article>
+<!--
+        <article id="contact-form">
+            <form name="form_content" action="" method="post" id="form_content">
+                <p class="form-title">Got Questions?</p> 
+                <p class="form-subtitle">Send Us A Message!</p>
+                <br>
+                <fieldset id="name-phone">
+                    <fieldset id="form-name">
+                        <label for="enter_name"><h5>name</h5></label>
+                        <input type="text" name="enter_name" id="enter_name">
+                    </fieldset>
+                    <fieldset id="form-phone">
+                        <label for="enter_phone"><h5>phone</h5></label>
+                        <input type="tel" name="enter_phone" id="enter_phone">         
+                    </fieldset>
+                </fieldset>
+                <fieldset id="email-message">
+                    <fieldset id="form-email">                               
+                        <label for="enter-email"><h5>e-mail</h5></label>    
+                        <input type="email" name="enter_email">
+                    </fieldset>
+                    <br>
+                    <fieldset id="message-entry">
+                        <label for="enter_message"><h5>message</h5></label>
+                        <textarea rows="10" placeholder="type message..." name="enter_message" id="enter_message"></textarea>
+                    </fieldset>
+                </fieldset>
+                <br>
+                <fieldset id="form-bottom">
+                    <fieldset id="response">
+                        <legend><h4>We'll Respond By...</h4></legend>
+                        <input type="radio" name="reply_method" id="option-call">
+                        <lable for="option-call">call</label> 
+                        <input type="radio" name="reply_method" id="option-text">
+                        <label for="option-text">text</label>
+                        <input type="radio" name="reply_method" id="option-email">
+                        <label for="option-email">e-mail</label>
+                    </fieldset>
+                    <fieldset id="contact-submit">
+                        <fieldset>
+                            <input type="submit" value="SEND">
+                        </fieldset>
+                    </fieldset>
+                </fieldset>        
+            </form>
+            <div class="response_msg"></div>
+        </article>
+-->
+    </section>
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#form_content").on("submit",function(e){
+        e.preventDefault();
+        if($("#form-content [name='enter_name']").val() === '')
+        {
+        $("#form_content [name='enter_name']");
+        }
+        else if ($("#form_content [name='enter_phone']").val() === '')
+        {
+        $("#form_content [name='enter_phone']");
+        }
+        else
+        {
+        var sendData = $( this ).serialize();
+        $.ajax({
+        type: "POST",
+        url: "cgi-bin/formresults.php",
+        data: sendData,
+        success: function(data){
+        $(".response_msg").css("display", "block");
+        $(".response_msg").text(data);
+        $("#form_content").find("input[type=text],input[type=tel], input[type=email], textarea, input[type=radio]").val("");
+        }
+        });
+        }
+        });
+        $("form_content input").blur(function(){
+        var checkValue = $(this).val();
+        if(checkValue != '')
+        {
+        $(this).css("border","1px solid #eeeeee");
+        }
+        });
+        });
+    </script>
+-->
+</body>
+
+
+
+<footer>
+    <div class="footer1">
+        <p>Connect on Facebook or Email Us:</p>
+        <a href="https://www.facebook.com/empoweredhealthadvocacy/?ref=page_internal"><i style="font-size: 30px;" class="fa" id="facebook">&#xf082;</i></a>
+        <a href="mailto:empowered@empoweredhealthadvocacy.com"><i style="font-size: 30px;" class="fa fa-envelope" id="email"></i></a>
+    </div>
+    <div class="footer2">
+        <a href="https://www.facebook.com/empoweredhealthadvocacy/?ref=page_internal"><i style="font-size: 40px;" class="fa" id="facebook">&#xf082;</i></a>
+        <a href="mailto:empowered@empoweredhealthadvocacy.com"><i style="font-size: 40px;" class="fa fa-envelope" id="email"></i></a>
+    </div>
+</footer>
+
+</html>

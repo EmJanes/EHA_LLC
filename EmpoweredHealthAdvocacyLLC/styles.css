@@ -1,0 +1,792 @@
+html {
+    background-color:  rgb(245, 245, 245);
+    font-family: 'inaiMathi', 'Calibri', 'Trebuchet MS', Arial, sans-serif;
+    font-size: 12pt;
+    letter-spacing: 2px;
+    color: rgb(48, 48, 48);
+    background: url(images/brickwall-lighter.png);
+    background-size: cover;
+}
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* INDEX NAV START */
+
+.index-nav ul {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+    list-style: none;
+    display: block;
+}
+.index-nav ul li a {
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.index-nav ul li, .index-nav ul li:focus, .index-nav ul li:visited {
+    color: rgb(48, 48, 48);
+    display: inline;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 40px;
+}
+.index-nav ul li :hover {
+    color: darkgoldenrod;
+}
+.index-nav li > ul {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 35%;
+    text-align: center;
+    width: 180px;
+    background-color: rgba(245, 245, 245, 0.7);
+    border: 1px solid goldenrod;
+    border-top: none;
+}
+.index-nav li li {
+    margin: 0;
+    padding: 3%;
+    padding-top: 1em;
+}
+.index-nav li li:first-of-type {
+    border-right: 1px solid goldenrod;
+}
+.index-nav li:hover > ul li a:hover {
+    color: darkgoldenrod;
+}
+.index-nav li:hover > ul {
+    display: inline-block;   
+}
+
+/* INDEX NAV/CONTENT END */
+
+/* NAV START */
+nav {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 50px;
+    margin-bottom: 2em;
+    text-align: left;
+    list-style: none;
+    display: block;
+} 
+nav * {
+    display: inline;
+}
+.nav-img {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: -10px;
+}
+.nav-img img {
+    width: 100px;
+    filter: drop-shadow(0 0 0 black);
+}
+nav ul ul {
+    vertical-align: 290%;
+}
+nav ul ul li a {
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+}
+nav ul li, nav ul li:focus, nav ul li:visited {
+    color: rgb(48, 48, 48);
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-bottom: 40px;
+}
+nav ul li :hover {
+    color: darkgoldenrod;
+}
+nav li ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 16%;
+    padding: .5em;
+    text-align: center;
+    height: 20px;
+    background-color: rgba(245, 245, 245, 0.7);
+    border: 1px solid goldenrod;
+    border-top: none;
+}
+nav li li {
+    margin: 0;
+    padding: 5px; 
+}
+nav li li:first-of-type {
+    border-right: 1px solid goldenrod;
+}
+nav li:hover > ul li a:hover {
+    color: darkgoldenrod;
+}
+nav li:hover > ul {
+    display: inline-block;   
+}
+/* NAV END */
+
+/* FOOTER ITEMS */
+footer {
+    width: 100%;
+    text-align: center;
+    height: min-content;
+    position: static;
+    padding: 5px;
+    bottom: 0;
+    margin: 0;
+    background-color: whitesmoke;
+    clear: both;
+    float: none;
+}
+footer * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer1 > p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footer2 {
+    display: none;
+}
+#facebook {
+    text-decoration: none;
+    color: rgb(0, 64, 160);
+}
+#email {
+    text-decoration: none;
+    color: white;
+    filter: drop-shadow(0 0px 1px black);
+}
+
+/* UNIFORM START */
+section {
+    text-align: center;
+    width: 90%;
+    margin: 5%;
+}
+section > * {
+    text-align: left;
+    margin: 1%;
+}
+article, aside {
+    background-color: white;
+    padding: 5%;
+    margin: 1%;
+}
+h1 {
+    font-family: signpainter, cursive;
+    color: goldenrod;
+    text-shadow: 0 0 0 black;
+    font-size: 50pt;
+    padding: 2%;
+    font-weight: normal;
+}
+body > h1:first-of-type {
+    margin-left: 12%;
+    margin-top: -20px;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'inaiMathi', 'Calibri', 'Trebuchet MS', Arial, sans-serif;
+    color: goldenrod;
+    text-shadow: 0 0 0 black;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    font-weight: lighter;
+}
+p {
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 20pt;
+    font-size: 13pt;
+}
+/* UNIFORM END */
+
+/* INDEX START */
+#index .index-img {
+    background-color: unset;
+    width: fit-content;
+    margin: auto;
+}
+.index-img img {
+    width: 100%;
+    max-width: 600px;
+    filter: drop-shadow(0 0 0 black);
+}
+#index footer {
+    position: fixed;
+    bottom: 0;
+}
+/* INDEX END */
+
+/* ABOUT START */
+#company section article img {
+    border-radius: 30px;
+    width: 25%;
+    margin-left: 20px;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 2px 2px 5px black;
+    float: right;
+    text-align: center;
+    opacity: 90%;
+}
+#company section article p::first-letter {
+    font-size: 25pt;
+    color: darkgoldenrod;
+    font-family: cursive;
+}
+/* ABOUT END */
+
+/* SERVICES START */
+#services section div {
+    display: inline-block;
+    vertical-align: middle;
+}
+#advo-inform {
+    width: 60%;
+}
+#doula-inform {
+    width: 60%;
+}
+.scrable {
+    width: 30%;
+}
+.scrable img {
+    width: 98%;
+    vertical-align: middle;
+}
+.pack-price {
+    width: 30%;
+    text-align: center;
+}
+.pack-price h2 {
+    font-family: signpainter;
+    text-transform: capitalize;
+    color: goldenrod;
+    font-size: 25pt;
+    font-weight: normal;
+    padding: 20px 5px;
+}
+.pack-price article a {
+    text-decoration: none;
+}
+.service-button {
+    background-color: whitesmoke;
+    width: 110px;
+    height: 50px;
+    margin-bottom: 5%;
+    box-shadow: inset 0 -1px 3px black;
+    font-size: 12pt;
+    text-align: center;
+    text-transform: uppercase;
+    color: steelblue;
+    letter-spacing: 2px;
+    font-family: 'Arial Narrow', 'inaiMathi', 'Calibri', 'Trebuchet MS', Arial, sans-serif;
+} 
+.service-button:hover {
+    color: rgb(65, 111, 112);
+    font-weight: bolder;
+    cursor: grab;
+}
+.service-button:hover {
+    box-shadow: inset 0 1px 3px black;
+}
+#benefit-inform {
+    width: 80%;
+}
+#doula-inform img {
+    opacity: 70%;
+    width: 40%;
+    max-width: 185px;
+    margin: -50px 5% 0 5%;
+    border-radius: 30px;
+    float: right;
+}
+#benefit-inform h2 {
+    padding: 20px;
+}
+.benefits {
+    width: 90%;
+}
+#services li span {
+    color: goldenrod; 
+    font-size: 14pt;
+    font-weight: bold;
+}
+.benefits ul {
+    margin-left: 1em;
+}
+.benefits li {
+    text-transform: uppercase;
+    font-size: 13pt;
+    color: darkgoldenrod;
+    list-style: none;
+}
+.benefits li ul {
+    border-left: 1px solid goldenrod;
+    margin-left: 0;
+    padding-left: 20px;
+}
+.benefits li li {
+    text-transform: none;
+    color: rgb(48, 48, 48);
+    font-size: 12pt;
+    list-style: none;
+    margin-bottom: 15px;
+}
+/* SERVICES END */
+
+/* ADVOCACY START */
+#advocacy section div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 0;
+}
+#left-div {
+    width: 55%;
+    min-width: 425px;
+}
+#right-div {
+    width: 35%;
+    text-align: center;
+}
+#right-div article {
+    margin-bottom: 15px;
+}
+#memberships {
+    padding: 40px;
+}
+#giftcards, #goal-steps {
+    padding: 20px;
+}
+.price, .limit {
+    font-size: 12pt;
+    font-weight: normal;
+    color: rgb(48, 48, 48);
+    text-transform: lowercase;
+}
+#person-prices {
+    text-align: left;
+    background-color: whitesmoke;
+    padding: 15px;
+}
+#person-prices tr th {
+    height: 50px;
+    padding-left: 10px;
+    text-align: center;
+    border-bottom: 1px solid goldenrod;
+}
+#person-prices tr td {
+    border-bottom: 1px solid goldenrod;
+    text-align: center;
+    height: 50px;
+}
+#person-prices tr td:first-of-type, #person-prices tr th:first-of-type {
+    text-align: right;
+    border-right: 1px solid goldenrod;
+    padding-right: 10px;
+    font-weight: bolder;
+}
+#support {
+    font-style: italic;
+    text-align: center;
+    margin-top: 1em;
+    background-color: rgba(173, 216, 230, 0.4);
+}
+#memberships h3:first-of-type {
+    padding-top: 2em;
+}
+#advo-table td {
+    vertical-align: top;
+    padding: 3%;
+    padding-right: 0;
+}
+#advo-table td:first-of-type {
+    vertical-align: middle;
+    padding: 0;
+}
+#right-div h1 {
+    font-size: 28pt;
+}
+#right-div h3 {
+    text-transform: none;
+}
+#goal-steps img {
+    max-width: 300px;
+}
+#giftcards button {
+    background-color: whitesmoke;
+    width: 110px;
+    height: 50px;
+    margin-bottom: 5%;
+    box-shadow: inset 0 -1px 3px black;
+    font-size: 12pt;
+    text-align: center;
+    text-transform: uppercase;
+    color: steelblue;
+    letter-spacing: 2px;
+    font-family: 'Arial Narrow', 'inaiMathi', 'Calibri', 'Trebuchet MS', Arial, sans-serif;
+} 
+#giftcards button:hover {
+    color: rgb(65, 111, 112);
+    font-weight: bolder;
+    cursor: grab;
+}
+#giftcards button:hover {
+    box-shadow: inset 0 1px 3px black;
+}
+/* ADVOCACY END */
+
+/* DOULA START */
+#doula article {
+    max-width: 800px
+}
+#doula-display td {
+    vertical-align: top;
+}
+#doula-display td:nth-child(2) {
+    padding-top: 1em;
+}
+.doula-gallery {
+    width: 30%;
+    padding-right: 15px;
+}
+.doula-packages {
+    width: 70%;
+}
+.doula-packages h4, .doula-packages ul {
+    padding-left: 2%;
+}
+.doula-packages li {
+    margin-left: 5%;
+    max-width: 450px;
+}
+#post {
+    padding: 10px;
+    margin-left: 5%;
+    border: 1px solid goldenrod;
+}
+#post th, #post td {
+    vertical-align: baseline;
+    padding: 5px;
+    margin: 5px;
+}
+#post th {
+    width: fit-content;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid goldenrod;
+} 
+#post th:nth-child(2) {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+#post td:nth-child(2) {
+    padding-left: 10px;
+}
+#post tr:nth-child(2) td:last-of-type {
+    border-left: 1px solid goldenrod;
+    padding-left: 5%;
+}
+#post th:last-of-type {
+    width: 250px;
+}
+#doula ul {
+    padding-left: 10px
+    
+}
+/* DOULA END */
+
+/* TEAM START */
+#team-side-by-side tr {
+    vertical-align: top;
+}
+#team-side-by-side tr tr {
+    vertical-align: middle;
+}
+#team-stacked {
+    display: none;
+}
+.nicki img, .jessie img {
+    border-radius: 100%;
+    margin-right: 1em;
+}
+#team h2 {
+    text-transform: capitalize;
+    font-family: signpainter, cursive;
+    font-size: 30pt;
+    padding-bottom: 10px;
+}
+#team h2, #team h4 {
+    color: cadetblue;
+    font-weight: lighter;
+}
+.impact-phrase {
+    font-family: 'signpainter', cursive;
+    font-size: 25pt;
+    color: darkgoldenrod;
+}
+/* TEAM END */
+
+/* CONTACT START */
+#contact section article {
+    display: inline-block;
+    vertical-align: top;
+}
+#contact-images {
+    padding: 10px;
+    margin: auto;
+}
+#contact section article:nth-of-type(2) {
+    display: none;
+}
+.form-subtitle {
+    color: darkgoldenrod;
+    text-align: center;
+}
+.form-title {
+    font-family: signpainter, cursive;
+    color: darkgoldenrod;
+    font-weight: normal;
+    font-size: 35pt;
+    padding: 20px 0;
+    
+}
+#contact article h5 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#contact-form {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#name-phone fieldset, #form-bottom fieldset, #email-message fieldset {
+    display: inline-block;
+}
+#contact fieldset input {
+    background-color: whitesmoke;
+}
+#contact fieldset label {
+    text-align: left;
+}
+#form-name input, #form-phone input, #form-email input {
+    font-size: 10pt;
+    padding: 2px;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+#form-name input {
+    width: 200px;
+}
+#form-phone input {
+    width: 100px;
+}
+#form-email input {
+    width: 313px;
+}
+#message-entry {
+    margin-top: 2em;
+}
+#message-entry textarea {
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 300px;
+}
+#contact-submit {
+    margin-left: 1em;
+}
+#contact-submit input {
+    padding: 10px;
+    color: rgb(165, 119, 0);
+    font-size: 12pt;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px gray;
+}
+#contact-submit input:hover {
+    cursor: grab;
+    box-shadow: inset 2px 2px gray;
+}
+.response_msg {
+    margin-top:10px;
+    font-size:13px;
+    background:#E5D669;
+    color:#ffffff;
+    width:250px;
+    padding:3px;
+    display:none;
+    }
+/* CONTACT END */
+
+
+/* MEDIA ADJUSTMENT START */
+@media screen and (max-width: 935px) {
+    #contact-form {
+        width: 425px;
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width:875px) {
+    #advo-inform, #doula-inform, #benefit-inform {
+        width: 80%;
+    }
+    .scrable, .pack-price {
+        width: 40%;
+    }
+    #team-side-by-side {
+        display: none;
+    }
+    #team-stacked {
+        display: block;
+    }
+    #advocacy section div {
+        display: block;
+    }
+    #advocacy section div article {
+       margin: auto;
+       margin-bottom: 10%;
+    }
+    #left-div {
+        width: 99%;
+        min-width: none;
+    }
+    #right-div {
+        width: 99%;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 35pt;
+        margin: 0 20px 20px 20px;
+    }
+    #company section article img {
+        float: none;
+        width: 80%;
+        max-width: 350px;
+    }
+    #advo-inform, #doula-inform, #benefit-inform {
+        width: 90%;
+    }    
+    .pack-price {
+        width: 45%;        
+    }       
+    .scrable {
+        width: 45%;
+    }  
+    .doula-gallery {
+        display: none;
+    }
+    .impact-phrase {
+        font-size: 20pt;
+    }
+    #advo-breakdown {
+        display: none;
+    }
+}     
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 30pt;
+    }
+    section {
+        width: 99%;
+        margin: .5%;
+        padding: 0;
+    }
+    article, #advocacy article, #doula article {
+        max-width: 350px;
+        margin: auto;
+    }
+    .index-nav ul li, .index-nav ul li:focus, .index-nav ul li:visited {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    nav {
+        letter-spacing: .25px;
+        font-size: 10pt; 
+    } 
+    nav ul ul {
+        vertical-align: baseline;
+    }
+    .nav-img img {
+        width: 70px;
+        vertical-align: middle;
+    }
+    .footer2 {
+        width: 100%;
+        display: block;
+    }
+    .footer1 {
+        display: none;
+    }
+    #contact section article:first-of-type {
+        display: none;
+    }
+    #contact section article:nth-of-type(2) {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        margin-top: 30px;
+        padding: 5px;
+        text-align: center;
+    }
+    #contact-form {
+        width: fit-content
+    }
+    #form-name input {
+        width: 150px;
+    }
+    #form-phone input {
+        width: 100px;
+    }
+    #form-email input {
+        width: 263px;
+    }
+    #message-entry {
+        margin-top: 2em;
+    }
+    #message-entry textarea {
+        width: 250px;
+    }   
+    #advo-inform, #doula-inform, #benefit-inform, .scrable, .pack-price {
+        width: 90%;
+    }    
+    .scrable {
+        text-align: center;
+    }
+    .scrable img {
+        width: 280px;
+    
+    }
+
+}
+
+/* MEDIA ADJUSTMENT END */
+
+/* MEDIA WIDTH ELEMENT TO ADJUST: 
+
+Index - nav is different and needs screen width adjust and footer at bottom.
+
+
+*/
+
+/* CONTENT THOUGHTS & TO-DOs
+
+
+
+*/
+
+
